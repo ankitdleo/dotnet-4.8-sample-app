@@ -1,0 +1,43 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: descopesampleapp-zero-trust-netpol
+  namespace: descopesampleapp-prod
+spec:
+  podSelector:
+    matchLabels:
+      app: descopesampleapp
+  policyTypes:
+    - Ingress
+    - Egress
+
+  ingress:
+    # Allow traffic ONLY from authorized ingress-controller or service mesh proxies
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: ingress-nginx
+        - podSelector:
+            matchLabels:
+              app.kubernetes.io/name: ingress-nginx
+      ports:
+        - protocol: TCP
+          port: 80
+
+  egress:
+    # Allow CoreDNS lookups strictly
+    - to:
+        - namespaceSelector: {}
+          podSelector:
+            matchLabels:
+              k8s-app: kube-dns
+      ports:
+        - protocol: UDP
+          port: 53
+        - protocol: TCP
+          port: 53
+
+    # Allow outbound HTTPS for secure API/telemetry egress
+    - ports:
+        - protocol: TCP
+          port: 443
