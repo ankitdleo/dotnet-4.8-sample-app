@@ -1,0 +1,102 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: descopesampleapp
+  namespace: descopesampleapp-prod
+  labels:
+    app.kubernetes.io/name: descopesampleapp
+    app.kubernetes.io/instance: descopesampleapp-prod
+    app.kubernetes.io/version: "1.0.0"
+    app.kubernetes.io/part-of: autonomous-pipeline
+    app.kubernetes.io/managed-by: cd-agent
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 0 # Zero downtime guarantee
+  selector:
+    matchLabels:
+      app: descopesampleapp
+  template:
+    metadata:
+      labels:
+        app: descopesampleapp
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: "/health"
+        prometheus.io/port: "80"
+    spec:
+      # PSS Restricted Profile Pod Security Standards
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile:
+          type: RuntimeDefault
+
+      containers:
+        - name: descopesampleapp
+          image: ghcr.io/org/descopesampleapp:latest
+          imagePullPolicy: IfNotPresent
+
+          # Container Security Context Hardening
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities:
+              drop:
+                - ALL
+
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+
+          # Resource Governance to prevent noisy neighbor and OOM DOS
+          resources:
+            requests:
+              cpu: "150m"
+              memory: "256Mi"
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
+
+          # High Availability Health Probes
+          startupProbe:
+            httpGet:
+              path: /health
+              port: 80
+            failureThreshold: 30
+            periodSeconds: 2
+
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            timeoutSeconds: 2
+            successThreshold: 1
+            failureThreshold: 2
+
+          volumeMounts:
+            - name: tmp-volume
+              mountPath: /tmp
+
+      volumes:
+        - name: tmp-volume
+          emptyDir:
+            medium: Memory
+            sizeLimit: 64Mi

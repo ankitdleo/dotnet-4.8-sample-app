@@ -1,0 +1,702 @@
+{
+  "nodes": [
+    {
+      "id": "repo-git-1788986120749-descopesampleapp",
+      "name": "DescopeSampleApp",
+      "type": "repository",
+      "description": "Imported from https://github.com/ankitdleo/dotnet-4.8-sample-app (Added LICENSE by Kevin J Gao)",
+      "tier": 0,
+      "status": "healthy"
+    },
+    {
+      "id": "runtime-.net framework",
+      "name": ".NET Framework 4.8",
+      "type": "runtime",
+      "description": "Package Manager: nuget",
+      "tier": 0,
+      "status": "healthy"
+    },
+    {
+      "id": "fw-0--net-framework-4-8",
+      "name": ".NET Framework 4.8",
+      "type": "framework",
+      "category": "web_framework",
+      "description": "Primary application architecture component",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "fw-1-asp-net-web-api-2",
+      "name": "ASP.NET Web API 2",
+      "type": "framework",
+      "category": "web_framework",
+      "description": "Primary application architecture component",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "fw-2-enterprise-wcf---iis",
+      "name": "Enterprise WCF / IIS",
+      "type": "framework",
+      "category": "web_framework",
+      "description": "Primary application architecture component",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Antlr",
+      "name": "Antlr",
+      "type": "dependency",
+      "category": "runtime_core",
+      "version": "3.5.0.2",
+      "description": "Production Runtime (runtime_core)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-bootstrap",
+      "name": "bootstrap",
+      "type": "dependency",
+      "category": "runtime_core",
+      "version": "5.2.3",
+      "description": "Production Runtime (runtime_core)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-jose-jwt",
+      "name": "jose-jwt",
+      "type": "dependency",
+      "category": "security",
+      "version": "5.0.0",
+      "description": "Production Runtime (security)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-jQuery",
+      "name": "jQuery",
+      "type": "dependency",
+      "category": "runtime_core",
+      "version": "3.4.1",
+      "description": "Production Runtime (runtime_core)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-AspNet-Mvc",
+      "name": "Microsoft.AspNet.Mvc",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "5.2.9",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-AspNet-Razor",
+      "name": "Microsoft.AspNet.Razor",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "3.2.9",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-AspNet-Web-Optimization",
+      "name": "Microsoft.AspNet.Web.Optimization",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "1.1.3",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-AspNet-WebApi",
+      "name": "Microsoft.AspNet.WebApi",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "5.2.9",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-AspNet-WebApi-Client",
+      "name": "Microsoft.AspNet.WebApi.Client",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "5.2.9",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-AspNet-WebApi-Core",
+      "name": "Microsoft.AspNet.WebApi.Core",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "5.2.9",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-AspNet-WebApi-HelpPage",
+      "name": "Microsoft.AspNet.WebApi.HelpPage",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "5.2.9",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-AspNet-WebApi-WebHost",
+      "name": "Microsoft.AspNet.WebApi.WebHost",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "5.2.9",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-AspNet-WebPages",
+      "name": "Microsoft.AspNet.WebPages",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "3.2.9",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-Bcl-AsyncInterfaces",
+      "name": "Microsoft.Bcl.AsyncInterfaces",
+      "type": "dependency",
+      "category": "runtime_core",
+      "version": "1.1.0",
+      "description": "Production Runtime (runtime_core)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-CodeDom-Providers-DotNetCompilerPlatform",
+      "name": "Microsoft.CodeDom.Providers.DotNetCompilerPlatform",
+      "type": "dependency",
+      "category": "runtime_core",
+      "version": "2.0.1",
+      "description": "Production Runtime (runtime_core)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-IdentityModel-Abstractions",
+      "name": "Microsoft.IdentityModel.Abstractions",
+      "type": "dependency",
+      "category": "security",
+      "version": "7.5.1",
+      "description": "Production Runtime (security)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-IdentityModel-JsonWebTokens",
+      "name": "Microsoft.IdentityModel.JsonWebTokens",
+      "type": "dependency",
+      "category": "security",
+      "version": "7.5.1",
+      "description": "Production Runtime (security)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-IdentityModel-Logging",
+      "name": "Microsoft.IdentityModel.Logging",
+      "type": "dependency",
+      "category": "web_framework",
+      "version": "7.5.1",
+      "description": "Production Runtime (web_framework)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-IdentityModel-Tokens",
+      "name": "Microsoft.IdentityModel.Tokens",
+      "type": "dependency",
+      "category": "security",
+      "version": "7.5.1",
+      "description": "Production Runtime (security)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Microsoft-Web-Infrastructure",
+      "name": "Microsoft.Web.Infrastructure",
+      "type": "dependency",
+      "category": "runtime_core",
+      "version": "2.0.1",
+      "description": "Production Runtime (runtime_core)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Modernizr",
+      "name": "Modernizr",
+      "type": "dependency",
+      "category": "runtime_core",
+      "version": "2.8.3",
+      "description": "Production Runtime (runtime_core)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-Newtonsoft-Json",
+      "name": "Newtonsoft.Json",
+      "type": "dependency",
+      "category": "utility",
+      "version": "13.0.3",
+      "description": "Production Runtime (utility)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-System-Buffers",
+      "name": "System.Buffers",
+      "type": "dependency",
+      "category": "runtime_core",
+      "version": "4.5.1",
+      "description": "Production Runtime (runtime_core)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-System-IdentityModel-Tokens-Jwt",
+      "name": "System.IdentityModel.Tokens.Jwt",
+      "type": "dependency",
+      "category": "security",
+      "version": "7.5.1",
+      "description": "Production Runtime (security)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "dep-System-Memory",
+      "name": "System.Memory",
+      "type": "dependency",
+      "category": "runtime_core",
+      "version": "4.5.5",
+      "description": "Production Runtime (runtime_core)",
+      "tier": 1,
+      "status": "healthy"
+    },
+    {
+      "id": "test-git-1788986120749-descopesampleapp",
+      "name": "xUnit",
+      "type": "test_suite",
+      "description": "Commands: dotnet test --configuration Release --collect:\"XPlat Code Coverage\" (Min Coverage: 80%)",
+      "tier": 2,
+      "metadata": {
+        "types": [
+          "unit",
+          "lint",
+          "security"
+        ],
+        "command": "dotnet test --configuration Release --collect:\"XPlat Code Coverage\"",
+        "coverage": 80
+      },
+      "status": "healthy"
+    },
+    {
+      "id": "gate-secret",
+      "name": "TruffleHog / Gitleaks",
+      "type": "security_gate",
+      "category": "security",
+      "description": "Entropy & regex secret credential detection",
+      "tier": 3,
+      "status": "optimized"
+    },
+    {
+      "id": "gate-sast",
+      "name": "Semgrep SAST",
+      "type": "security_gate",
+      "category": "security",
+      "description": "Static application security vulnerability rules",
+      "tier": 3,
+      "status": "optimized"
+    },
+    {
+      "id": "gate-sbom",
+      "name": "Syft CycloneDX SBOM",
+      "type": "security_gate",
+      "category": "security",
+      "description": "Software Bill of Materials export",
+      "tier": 3,
+      "status": "optimized"
+    },
+    {
+      "id": "gate-trivy",
+      "name": "Trivy Container Scan",
+      "type": "security_gate",
+      "category": "security",
+      "description": "CVE vulnerability gate (blocks on HIGH/CRITICAL)",
+      "tier": 3,
+      "status": "optimized"
+    },
+    {
+      "id": "gate-cosign",
+      "name": "Sigstore Cosign OIDC",
+      "type": "security_gate",
+      "category": "security",
+      "description": "Cryptographic keyless image signing",
+      "tier": 3,
+      "status": "optimized"
+    },
+    {
+      "id": "stage-build-git-1788986120749-descopesampleapp",
+      "name": "Build Stage (mcr.microsoft.com/dotnet/framework/sdk:4.8)",
+      "type": "container_stage",
+      "description": "Compilation, dependency cache mount & build artifact packaging",
+      "tier": 4,
+      "status": "healthy"
+    },
+    {
+      "id": "stage-runtime-git-1788986120749-descopesampleapp",
+      "name": "Runtime Distroless (mcr.microsoft.com/dotnet/framework/aspnet:4.8)",
+      "type": "container_stage",
+      "description": "Non-root execution: ContainerUser",
+      "tier": 4,
+      "status": "optimized"
+    },
+    {
+      "id": "k8s-deploy-git-1788986120749-descopesampleapp",
+      "name": "Deployment (PSS Restricted)",
+      "type": "k8s_resource",
+      "description": "readOnlyRootFilesystem, drop ALL capabilities, runAsNonRoot, Replicas: 2-10",
+      "tier": 5,
+      "status": "optimized"
+    },
+    {
+      "id": "k8s-netpol-git-1788986120749-descopesampleapp",
+      "name": "Zero-Trust NetworkPolicy",
+      "type": "k8s_resource",
+      "description": "Default-deny all ingress/egress, allows strictly defined ports",
+      "tier": 5,
+      "status": "optimized"
+    },
+    {
+      "id": "k8s-hpa-git-1788986120749-descopesampleapp",
+      "name": "HPA Autoscaler (70% CPU)",
+      "type": "k8s_resource",
+      "description": "Scale range: 2 to 10 pods",
+      "tier": 5,
+      "status": "healthy"
+    },
+    {
+      "id": "k8s-pdb-git-1788986120749-descopesampleapp",
+      "name": "PodDisruptionBudget",
+      "type": "k8s_resource",
+      "description": "minAvailable: 1 for zero-downtime node drain & upgrades",
+      "tier": 5,
+      "status": "healthy"
+    },
+    {
+      "id": "cluster-staging",
+      "name": "Kubernetes Cluster (Staging)",
+      "type": "cluster_target",
+      "description": "Namespace: descopesampleapp-prod-staging",
+      "tier": 6,
+      "status": "healthy"
+    },
+    {
+      "id": "cluster-prod",
+      "name": "Kubernetes Cluster (Production)",
+      "type": "cluster_target",
+      "description": "Namespace: descopesampleapp-prod (Canary Automated Promotion)",
+      "tier": 6,
+      "status": "healthy"
+    }
+  ],
+  "links": [
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "runtime-.net framework",
+      "relation": "DEPENDS_ON",
+      "description": "Execution Environment"
+    },
+    {
+      "source": "runtime-.net framework",
+      "target": "fw-0--net-framework-4-8",
+      "relation": "DEPENDS_ON",
+      "description": "Framework Dependency"
+    },
+    {
+      "source": "runtime-.net framework",
+      "target": "fw-1-asp-net-web-api-2",
+      "relation": "DEPENDS_ON",
+      "description": "Framework Dependency"
+    },
+    {
+      "source": "runtime-.net framework",
+      "target": "fw-2-enterprise-wcf---iis",
+      "relation": "DEPENDS_ON",
+      "description": "Framework Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Antlr",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-bootstrap",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-jose-jwt",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-jQuery",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-AspNet-Mvc",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-AspNet-Razor",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-AspNet-Web-Optimization",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-AspNet-WebApi",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-AspNet-WebApi-Client",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-AspNet-WebApi-Core",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-AspNet-WebApi-HelpPage",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-AspNet-WebApi-WebHost",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-AspNet-WebPages",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-Bcl-AsyncInterfaces",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-CodeDom-Providers-DotNetCompilerPlatform",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-IdentityModel-Abstractions",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-IdentityModel-JsonWebTokens",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-IdentityModel-Logging",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-IdentityModel-Tokens",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Microsoft-Web-Infrastructure",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Modernizr",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-Newtonsoft-Json",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-System-Buffers",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-System-IdentityModel-Tokens-Jwt",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "dep-System-Memory",
+      "relation": "DEPENDS_ON",
+      "description": "Runtime Dependency"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "test-git-1788986120749-descopesampleapp",
+      "relation": "TESTED_BY",
+      "description": "Quality Gate & Regression Prevention"
+    },
+    {
+      "source": "test-git-1788986120749-descopesampleapp",
+      "target": "gate-secret",
+      "relation": "VALIDATED_BY",
+      "description": "DevSecOps Automated Gate"
+    },
+    {
+      "source": "test-git-1788986120749-descopesampleapp",
+      "target": "gate-sast",
+      "relation": "VALIDATED_BY",
+      "description": "DevSecOps Automated Gate"
+    },
+    {
+      "source": "test-git-1788986120749-descopesampleapp",
+      "target": "gate-sbom",
+      "relation": "VALIDATED_BY",
+      "description": "DevSecOps Automated Gate"
+    },
+    {
+      "source": "test-git-1788986120749-descopesampleapp",
+      "target": "gate-trivy",
+      "relation": "VALIDATED_BY",
+      "description": "DevSecOps Automated Gate"
+    },
+    {
+      "source": "test-git-1788986120749-descopesampleapp",
+      "target": "gate-cosign",
+      "relation": "VALIDATED_BY",
+      "description": "DevSecOps Automated Gate"
+    },
+    {
+      "source": "repo-git-1788986120749-descopesampleapp",
+      "target": "stage-build-git-1788986120749-descopesampleapp",
+      "relation": "PACKAGED_INTO",
+      "description": "Multi-stage Builder"
+    },
+    {
+      "source": "stage-build-git-1788986120749-descopesampleapp",
+      "target": "stage-runtime-git-1788986120749-descopesampleapp",
+      "relation": "PACKAGED_INTO",
+      "description": "Minimal Secure Distroless Artifact"
+    },
+    {
+      "source": "gate-trivy",
+      "target": "stage-runtime-git-1788986120749-descopesampleapp",
+      "relation": "HARDENED_BY",
+      "description": "Vulnerability Attestation"
+    },
+    {
+      "source": "gate-cosign",
+      "target": "stage-runtime-git-1788986120749-descopesampleapp",
+      "relation": "HARDENED_BY",
+      "description": "Sigstore Signature Embedded"
+    },
+    {
+      "source": "stage-runtime-git-1788986120749-descopesampleapp",
+      "target": "k8s-deploy-git-1788986120749-descopesampleapp",
+      "relation": "DEPLOYS_TO",
+      "description": "Continuous Automated Deployment"
+    },
+    {
+      "source": "k8s-deploy-git-1788986120749-descopesampleapp",
+      "target": "k8s-netpol-git-1788986120749-descopesampleapp",
+      "relation": "ISOLATED_BY",
+      "description": "Micro-segmentation"
+    },
+    {
+      "source": "k8s-deploy-git-1788986120749-descopesampleapp",
+      "target": "k8s-hpa-git-1788986120749-descopesampleapp",
+      "relation": "SCALED_BY",
+      "description": "Autoscaling Policy"
+    },
+    {
+      "source": "k8s-deploy-git-1788986120749-descopesampleapp",
+      "target": "k8s-pdb-git-1788986120749-descopesampleapp",
+      "relation": "HARDENED_BY",
+      "description": "High Availability Guardrail"
+    },
+    {
+      "source": "k8s-deploy-git-1788986120749-descopesampleapp",
+      "target": "cluster-staging",
+      "relation": "DEPLOYS_TO",
+      "description": "Automated Smoke & Integration Test Rollout"
+    },
+    {
+      "source": "cluster-staging",
+      "target": "cluster-prod",
+      "relation": "DEPLOYS_TO",
+      "description": "Progressive Canary Validation Gate"
+    }
+  ],
+  "summary": {
+    "totalNodes": 44,
+    "totalEdges": 45,
+    "classifiedDeps": 25,
+    "securityGates": 5,
+    "k8sResources": 4
+  }
+}
